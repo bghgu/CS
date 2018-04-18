@@ -122,11 +122,11 @@
 
   ![img](https://mblogthumb-phinf.pstatic.net/data19/2006/5/24/48/4nf_mvd_01-jinsol1.gif?type=w210)
 
-  ㄴㅇㄴㅇ
+  문제의 릴레이션
 
-  <img src="https://mblogthumb-phinf.pstatic.net/data19/2006/5/24/160/4nf_mvd_03-jinsol1.gif?type=w210" width="300" height="100">
+  ![img](http://postfiles1.naver.net/data19/2006/5/24/160/4nf_mvd_03-jinsol1.gif?type=w3)
 
-  ㄴㅇㄴㅇ
+  자격증과 언어는 프로그래머|자격증, 프로그래머|언어를 통해 join 된다.
 
 11. 제5 정규형
 
@@ -134,13 +134,11 @@
 
     ![img](https://mblogthumb-phinf.pstatic.net/data19/2006/5/24/278/5nf_mvd_01-jinsol1.gif?type=w210)
 
-    ㄴㅇㄴㅇ
+    문제의 릴레이션
 
-    <img src="https://mblogthumb-phinf.pstatic.net/data18/2006/5/24/144/5nf_mvd_03-jinsol1.gif?type=w210" width="300" height="100">
+    ![img](http://postfiles1.naver.net/data18/2006/5/24/144/5nf_mvd_03-jinsol1.gif?type=w3)
 
-    ㄴㅇㄴㅇㄴㅇ
-
-    ​
+    join을 통해 이어진다.
 
 ## 4. 데이터 베이스 설계
 
