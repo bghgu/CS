@@ -124,7 +124,7 @@
 
   ㄴㅇㄴㅇ
 
-  <img src="https://mblogthumb-phinf.pstatic.net/data19/2006/5/24/160/4nf_mvd_03-jinsol1.gif?type=w210" width="300" height="300">
+  <img src="https://mblogthumb-phinf.pstatic.net/data19/2006/5/24/160/4nf_mvd_03-jinsol1.gif?type=w210" width="300" height="100">
 
   ㄴㅇㄴㅇ
 
@@ -136,7 +136,7 @@
 
     ㄴㅇㄴㅇ
 
-    <img src="https://mblogthumb-phinf.pstatic.net/data18/2006/5/24/144/5nf_mvd_03-jinsol1.gif?type=w210" width="300" height="300">
+    <img src="https://mblogthumb-phinf.pstatic.net/data18/2006/5/24/144/5nf_mvd_03-jinsol1.gif?type=w210" width="300" height="100">
 
     ㄴㅇㄴㅇㄴㅇ
 
