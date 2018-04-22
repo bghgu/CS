@@ -1,7 +1,5 @@
 # Server
 
-[TOC]
-
 ## 1. JSP(Java Server Page)
 
 ![img](https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/JSP_Model_2.svg/220px-JSP_Model_2.svg.png)
