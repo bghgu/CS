@@ -5,10 +5,10 @@
    1. [DataBase](https://github.com/bghgu/CS/tree/master/DataBase)
    2. Data Structure
    3. Electronic Calculator Structure
-   4. [OS](https://github.com/bghgu/CS/tree/master/Java)
+   4. [OS](https://github.com/bghgu/CS/tree/master/OS)
    5. [Software Engineering](https://github.com/bghgu/CS/tree/master/Software%20Engineering)
    6. [Data Communication](https://github.com/bghgu/CS/tree/master/Data%20Communication)
-2. [네트워크 프로그래밍](https://github.com/bghgu/CS/tree/master/Network%20Programming)
+2. [Network Programming](https://github.com/bghgu/CS/tree/master/Network%20Programming)
 3. [Java](https://github.com/bghgu/CS/tree/master/Java)
 4. [Server](https://github.com/bghgu/CS/tree/master/Server)
 
