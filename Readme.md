@@ -2,17 +2,14 @@
 
 1. 정보처리기사
 
-   1. 데이터 베이스 + 자료 구조
-
-   2. 전자계산기 구조
-
-   3. 운영체제
-
-   4. 소프트웨어 공학
-
-   5. 데이터 통신
-2. 네트워크 프로그래밍
-3. java
-4. Server
+   1. [DataBase](https://github.com/bghgu/CS/tree/master/DataBase)
+   2. Data Structure
+   3. Electronic Calculator Structure
+   4. [OS](https://github.com/bghgu/CS/tree/master/Java)
+   5. [Software Engineering](https://github.com/bghgu/CS/tree/master/Software%20Engineering)
+   6. [Data Communication](https://github.com/bghgu/CS/tree/master/Data%20Communication)
+2. [네트워크 프로그래밍](https://github.com/bghgu/CS/tree/master/Network%20Programming)
+3. [Java](https://github.com/bghgu/CS/tree/master/Java)
+4. [Server](https://github.com/bghgu/CS/tree/master/Server)
 
 
