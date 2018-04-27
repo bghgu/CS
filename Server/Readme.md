@@ -336,6 +336,26 @@
 
 ## 22. 클라이언트 사이드 렌더링
 
+## 23. 리버스 프록시(Reverse Proxy)
+
+![img](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Reverse_proxy_h2g2bob.svg/400px-Reverse_proxy_h2g2bob.svg.png)
+
+* 컴퓨터 네트워크에서 한 대 이상의 서버로부터 클라이언트 중간에 자원을 검색하는 프록시 서버의 일종
+* 이러한 자원들은 마치 웹 서버 자체에서 기원한 것처럼 클라이언트로 반환된다.
+* 관련 서버가 클라이언트에 의해 접속되는 중간 매개체이다.
+* 리버스 프록시는 인터넷으로부터 요청을 받아와서 이것들을 내부망의 서버로 포워드한다.
+* 프록시에 요청을 하는 대상은 내부망을 인지하지 못할 수 있다.
+* 대중적인 웹 서버들은 Reverse Proxy 기능을 사용하는 일이 잦으며 약화된 HTTP 기능의 애플리케이션 프레임워크를 보호한다.
+* 리버스 프록시로 서비스 제공시 WAS에서 REMOTE_ADDR을 사용하면 Reverse Proxy 서버의 IP를 얻게 된다. 따라서 프록시 환경에서 Client IP를 얻기 위한 X-Forwarded-For(XFF) http header를 참고해서 XFF를 사용해야 한다.
+* Reverse Proxy는 인터넷 사용자의 공격으로부터 내부 서버를 보호나는 보안 기능을 수행함으로써 네트워크 DMZ에서 회사 인트라넷의 HTTP서버를 보호하기 위해 배치되는 보안 디바이스이다.
+* 내부 네트워크에 대한 단일 액세스 지점을 제공하여 내부 HTTP 서버를 보호한다.
+* 관리자는 Reverse Proxy Server의 인증 및 액세스 제어 기능을 사용하여 내부 Server에 액세스할 수 있는 사용자를 제어하고 각 개별 사용자가 액세스할 수 있는 서버를 제어할 수 있습니다.
+* 인트라넷 서버에 대한 모든 트래픽은 단일 네트워크 주소(Reverse Proxy 서버의 주소)에 대해 지정된 것으로 나타납니다.
+* Reverse Proxy 서버가 배치되면 Reverse Proxy 서버와 연관된 URL만 웹 브라우저 사용자에게 공개되고, 인터넷 사용자는 이 URL을 사용하여 Reverse Proxy 서버에 액세스 한다.
+* 관리자는 Reverse Proxy 서버에서 이러한 리디렉션을 가능하게 하는 URL 맵핑 구성을 수행한다.
+* 내부 서버에서 인터넷 사용자에게 전송된 모든 트래픽은 단일 네트워크 주소에서 시작된 것으로 나타난다.
+* 출저 : https://www.ibm.com/support/knowledgecenter/ko/SSKTXQ_9.0.0/admin/config/st_adm_port_rvprxy_overview_c.html, https://www.lesstif.com/pages/viewpage.action?pageId=21430345
+
 ----
 
 모든 자료는 위키 백과 https://ko.wikipedia.org/wiki 에서 참조하였습니다. 
