@@ -338,7 +338,7 @@
 
 ## 23. 리버스 프록시(Reverse Proxy)
 
-![img](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Reverse_proxy_h2g2bob.svg/400px-Reverse_proxy_h2g2bob.svg.png)
+![img](https://www.lesstif.com/download/attachments/21430345/image2014-7-16%200%3A58%3A45.png?version=1&modificationDate=1405440454000&api=v2)
 
 * 컴퓨터 네트워크에서 한 대 이상의 서버로부터 클라이언트 중간에 자원을 검색하는 프록시 서버의 일종
 * 이러한 자원들은 마치 웹 서버 자체에서 기원한 것처럼 클라이언트로 반환된다.
