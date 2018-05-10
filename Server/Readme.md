@@ -356,6 +356,15 @@
 * 내부 서버에서 인터넷 사용자에게 전송된 모든 트래픽은 단일 네트워크 주소에서 시작된 것으로 나타난다.
 * 출저 : https://www.ibm.com/support/knowledgecenter/ko/SSKTXQ_9.0.0/admin/config/st_adm_port_rvprxy_overview_c.html, https://www.lesstif.com/pages/viewpage.action?pageId=21430345
 
+## 24. SYNC
+
+## 25. ASYNC
+
+## 26. OAuth2(OAuth 2.0 Authorization Framework)
+
+* Authentication : 인증
+* Authorization : 인가
+
 ----
 
 모든 자료는 위키 백과 https://ko.wikipedia.org/wiki 에서 참조하였습니다. 
