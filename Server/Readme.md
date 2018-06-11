@@ -76,7 +76,7 @@
   * 대용량 파일 지원
   * 대역폭 스로틀링
 
-## 5. Web Application Server(WSA)
+## 5. Web Application Server(WAS)
 
 * 인터넷 상에서 HTTP를 통해 사용자 컴퓨터나 장치에 애플리케이션을 수행해 주는 미들웨어이다.
 
