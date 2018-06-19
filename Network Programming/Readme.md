@@ -1,6 +1,6 @@
 # 네트워크 프로그래밍(TCP-IP)
 
-## 1.기본
+## 1. 기본
 
 1. 네트워크 프로그래밍 = 소켓 프로그래밍
 2. 소켓을 기반으로 한다.
@@ -219,7 +219,7 @@
    servAddr.sin_addr.s_addr = inet_addr(argv[1]);
    servAddr.sin_port = htons(atoi(argv[2]));
    ```
-## 7.TCP 연결, 3 way handshake
+## 7. TCP 연결, 3 way handshake
 
 1. IP는 3계층(네트워크 계층)이고, TCP & UDP는 4계층(전송 계층)
 
@@ -261,7 +261,7 @@
    SYN_RCV : SYNC 요청을 받고 상대방의 응답을 기다리는 중
 
    ESTABLISHED : 포트 연결 상태
-## 8.TCP 종료, 4 way handshake
+## 8. TCP 종료, 4 way handshake
 ![img](http://cfile21.uf.tistory.com/image/2678E035537EEE9126A109)
 
 1. 통신을 종료하고자 하는 Client가 서버에게 FIN 패킷을 보내고 자신은 FIN_WAIT_1 상태로 대기한다.
@@ -277,7 +277,7 @@
 
 최종 ACK를 받은 서버는 자신의 포트도 CLOSED로 닫게 된다.
 
-## 9.TCP 문제점
+## 9. TCP 문제점
 * 문제점
 
   클라이언트는 문장 단위로 데이터를 송 수신 하기 때문에 데이터의 경계가 없는 TCP에서 문제가 발생한다.
@@ -292,3 +292,54 @@
 
   클라이언트는 사전에 서버로 부터 받은 데이터의 길이 만큼, 서버로 부터 데이터를 수신 받으면 된다.
 
+## 10. UDP
+
+* UDP 소켓은 SEQ, ACK와 같은 메시지 전달을 하지 않는다.
+
+* Flow Control이 없다.
+
+* 연결의 설정과 해제의 과정도 존재하지 않는다.
+
+* 데이터 분실 및 손실의 위험이 있다.
+
+* 확인의 과정이 존재하지 않기 때문에 데이터의 전송이 빠르다.
+
+* 성능이 중시될 때 UDP를 사용한다.
+
+* 서버 소켓과 클라이언트 소켓의 구분이 없다.
+
+* 하나의 소켓으로 둘 이상의 영역과 데이터 송수신이 가능하다.
+
+* 따라서 데이터를 전송할 때 마다 목적지에 대한 정보를 같이 전달해햐 한다.
+
+* 데이터의 전송지가 둘 이상이 될 수 있으므로 데이터 수신 후 전송지가 어디인지 확인할 필요가 있다.
+
+* sendto : 클라이언트
+
+  ```
+  sendro(sock, message, strlen(message), 0, (struct sockaddr*)&serv_adr, sizeof(serv_adr));
+  ```
+
+* recvfrom : 서버
+
+  ```
+  recvfrom(serv_sock, message, BUF_SIZE, 0, (struct sockaddr*)&clnt_adr, &clnt_adr_sz);
+  ```
+
+* 데이터의 경계가 존재한다.
+
+* connected UDP 소켓과 unconnected UDP 소켓이 있다.
+
+* unconnected UDP 소켓
+
+  sendto 함수 호출과정
+
+  1. UDP 소켓에 목적지의 IP와 PORT 번호 등록
+  2. 데이터 전송
+  3. UDP 소켓에 등록된 목적지 정보 삭제
+
+* connected UDP 소켓의 경우 1단계와 3단계의 과정을 매회 거치지 않는다.
+
+* connected UDP 소켓은 TCP와 같이 상대 소켓과의 연결을 의미하지는 않는다. 그러나 소켓에 목적지에 대한 정보는 등록된다.
+
+* connected UDP 소켓을 대상으로는 read, write 함수의 호출이 가능하다.
