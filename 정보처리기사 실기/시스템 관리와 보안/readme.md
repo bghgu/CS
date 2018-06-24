@@ -198,3 +198,48 @@
 * Social Engineering(사회공학)
 * SPAM(스팸)
 * Sphere Phishing(스피어 피싱)
+* Spoofing(스푸핑)
+* Spyware(스파이웨어)
+* SQL Injection
+* SSO(Single Sign-On, 싱글 사인온)
+* Stuxnet(스턱스넷)
+* Switch Jamming(스위치 재밍)
+* SYN Flooding
+
+## T
+
+* Teardrop Attack(티어 드롭 공격)
+* TEMPEST(Transient ElectroMagnetic Pulse Emanation Standard, 템피스트)
+* Tokenization(토큰화)
+* Trap Door(트랩도어)
+* Trojan Horse(트로이 목마)
+* Tunneling(터널링)
+* Turbo code(터보 코드)
+* Tvishing
+
+## U
+
+* UPNP(Universal Plug & Play, 범용 프러그 앤 플레이)
+* USIM(Universal Subscriber Identity Module, 범용 가입자 식별 모듈)
+* UTM(Unified Threat Management, 통합위협관리)
+
+## V
+
+* Vandalism(반달리즘)
+* VPN(Virtual Private Network, 가상사설망)
+
+## W
+
+* Watermarking(워터마킹)
+* WEP(Wired Equivalent Privacy)
+* WPKI(Wireless PKI, 무선 공개키 기반구조)
+
+## X
+
+* XSS(Cross Site Scripting)
+
+## Z
+
+* Zero Day Attack
+* ZeuS
+* Zombie(좀비)
