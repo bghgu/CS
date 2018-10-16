@@ -333,3 +333,153 @@
   * /var : system variables
   * /bin : commands
   * /usr : commands, libraries
+
+## 22. 명령어
+
+* Printing Working Directory : pwd
+
+* Createing a file
+  * cat > test.txt
+  * touch test.txt
+  * vi test.txt
+* tar : saves directory structures onto a single volume or disk archives
+* gzip : gz형식으로 압축한다.
+* bzip2 : bz2형식으로 압축한다.
+* 용량이 줄어들고 원본유지가 안되고 단일 파일만 압축할 수 있다.
+* bzip2방식이 더 효율이 좋다.
+* tar을 이용해 여러 개의 파일을 하나로 합친다.
+  * -c : 새로운 보관 파일을 생성한다.
+  * -x : 보관 파일을 풀어준다.
+  * -v : 파일이 묶이거나 풀리는 과정을 보여준다.
+  * -f : 보관 파일명을 지정해준다.
+  * -z: gzip 방식 추가
+  * -j : bzip2 방식 추가
+
+## 23. File Attributes
+
+* Filenames
+
+  * up to 255 characters in length
+  * cannot use . .. - current working directory and its parent direcory
+
+* Time of Last File Modification
+
+  * the time that the file was last modified and is used by several utilities
+
+* File Owner
+
+  * the owner of the file. which is typically the same as the username of the person who started it.
+  * the username(text) is typically refer to a user, representing user ID which is typically integer.
+  * the username is easier for humans to understand than a numeric ID.
+
+* File Group
+
+  * a member of a group.
+  * it is assigned by the system administrator and is used as part of the UNIX security mechanism
+
+* File type
+
+  * '-' : regular file
+  * d : directory file
+  * b : buffered special file (such as a disk drive)
+  * c : unbuffered special file (such as a terminal)
+  * l : symbolic link
+  * p : pipe
+  * s : socket 
+
+* File Permissions(Security) : Who is allowed to see what
+
+  * Three types of users
+    * User(Owner)
+    * Group
+    * Others
+  * Three types of permissions
+    * Read Permission - r
+    * Write Permission - w
+    * Execute Permission - x
+
+* |         | Regular File                            | Directory File                                               | Special File                                     |
+  | ------- | --------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------ |
+  | Read    | read the contents                       | read the directory(list the names of files that it contains) | read from the file using the read() system calls |
+  | Write   | change the contents                     | Add or remove files to / from the directory                  | write to the file using the write() system calls |
+  | Execute | execute the file if the file is program | access files in the directory                                | No meaning                                       |
+
+* when a process creates a file, the default permissions given to that file are modified by a special value called the umask.
+
+* It`s perfectly possible, although unusual, for the owner of a file to have fewer permissions than the group or anyone else.
+
+* Four values related to file permissions:
+
+  1. A Real user ID
+  2. An Effective user ID
+  3. A Real group ID
+  4. An Effective group ID
+
+* When a process runs
+
+  1. If the process `effecive user ID is the same as the owner of the file, the User permisiion apply.
+  2. If the process`effective user ID is different, but its effective group ID matches the files  group ID, then the Group permissions apply.
+  3. If neither the process`s effective user ID nor the effective group ID matches the owner of the file and the group ID, respectively, the Others permission apply.
+
+* Listing File Group: groups
+
+  * groups [userId]
+  * Lists all of the groups
+  * IF the name of a user, lists of the groups to which that user belongs
+
+* Changing File Group: chgrp
+
+  * chgrp -R groupname {fileName}*
+  * changes the group of files.
+  * A super-user(root) can change the group of any file.
+  * The -R option recursively changes the group of the files in a directoy
+
+* Changing File Owner: chown
+
+  * chown -R newUserId {fileName}+
+  * allows a super-user to change the ownership of files
+  * The -R option recursively changes the owner of the files in direcotries
+
+* Change File Permissions: chmod
+
+  * chmod -R change{, change}*{fileName}+
+  * changes the modes (permissions) of the specifed
+  * symbolic
+    * Use shorthand name
+  * absoulte
+    * Use an octal value to set
+  * clusterSelection+newPermissions (add permissions)
+  * clusterSelection-newPermissions(subtract permission)
+  * clusterSelection=newPermissions(assign permissions absolutely)
+    * where clusterSelection is any combination of
+      * u(user/owner)
+      * g(group)
+      * o(others)
+      * a(all)
+    * and newPermissions is any combination of
+      * r(read)
+      * w(write)
+      * x(execute)
+      * s(set user ID / set group ID)
+  * -R Option recursively changes the modes of the files in directories.
+  * changing a directory\`s permission setting doesn\`t change the settings of the files in the directory.
+    * g+w : Add group write permission
+    * u-rw : Remove user read and write permission
+    * a+x : Add execute permisssion for user, group, and others
+    * g=r : Give the group read permission only
+    * u+w,g-r : Add writer permission for user, and remove group read permission
+
+* Chmod absoulte
+
+  * use an octal number to set permissions
+  * Each octal digit represents a permission triplet
+
+* umask
+
+  | File      | 666  | -rw-rw-rw  |
+  | --------- | ---- | ---------- |
+  | umask     | 022  |            |
+  | result    | 644  | -rw-r--r-- |
+  | Directory | 777  | -rwxrwxrwx |
+  | umask     | 022  |            |
+  | result    | 755  | -rwxr-xr-x |
