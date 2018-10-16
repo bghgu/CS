@@ -200,3 +200,136 @@
 * Graphical User Interfaces
 * System Administration
 
+## 16. The Unix System
+
+* Multiuser
+  * Server - connect via terminals
+* Single User
+  * Your own PC
+* Interface
+  * Text based
+  * GUI
+
+## 17. What the difference between PC & Workstation
+
+* Previously
+  * Memory, Hard Drive, Screen
+* Currently - OS is designed for
+  * Windows, Mac OS = PC
+  * Unix = Workstation
+
+## 18. Basics
+
+* Unix is  Case Sensitive
+  * CD FILE != cd file
+* Type mostly in lowercase
+* Backspace
+  * Either Backspace or Delete key or Ctrl + H
+* Logging in
+  * Username(Login ID) : a unique name that distinguishes you from the other users of the system.
+  * Usernames and initail passwords are assigned to you by the system administrator(root-super user)
+* User Accounts
+  * Typically : first inital lastname
+    * John Doe = jdoe
+    * Im Hyunmi = jim
+    * Daseul Bae = dbae
+  * password
+    * passwd
+    * passwords must be 6+ characters Must be a good mix letters / digits
+* Logging Off
+  * exit
+  * logout
+  * Ctrl + D (^D)
+  * Depends on yout version of Unix
+* Turning Off a Unix System (If you are the owner / root)
+  * Ctrl - ALT - DEL
+  * init 5
+  * shutdown now
+  * halt
+  * Depends on your version of UNIX
+
+## 19. Shells
+
+* See either a $, a % or another prompt
+  * default shell prompting - a special kind of program
+* A Shell
+  * a middleman between you and the raw UNIX operationg system.
+  * run programs, build pipelines of processes, save output to files, and run more that one program at the same time.
+  * executes all of the commands
+* most popular shells
+  * Bourne Shell (sh)
+  * Korn Shell (ksh)
+  * C Shell (csh)
+  * Bash Shell (bash)
+
+## 20. Utility
+
+* ls : Display list of file
+* cat : Display content of file
+* more : Display file w /pause
+* cp : Copy file
+* grep : Find string in file
+* diff : Compare files
+* mv : Rename file
+* man : Get help
+* chmod : Change file protection
+* cd : Create directory
+* mkdir : Make directory
+* rmdir : Remove directory
+* df : Display disk space
+* vi : Edit a file
+* lp : print a file
+* date : Display Date / Time
+* who, w : Who else is online
+* cal : Display a calender
+* finger : Displays info about a user
+* talk : Chat with other user
+* head : First few lines of the file
+* tail : Last few lines of a file
+* echo : Displays text
+* man : Online manuals
+* compress : Compress a file
+* uncompress : Uncompress a file
+* file : Displays information
+* zcat : Display a compressed file
+
+## 21. File Structure
+
+* Files : Everything is a file
+* Filenames
+  * Characters
+    * A-Z, a-z, Case Sensitive
+    * 0-9 Digits
+    * _ Underscore
+    * . Period
+  * Length: 255 Characters
+* Invisible Filename
+  * Start with a period
+    * .hidden
+    * .login
+    * .profile
+  * ls -a displays all filenames
+* File Extensions
+  * .c : C Program
+  * .cc : C++ Programs
+  * .csh : C shell script
+  * .h : Header
+  * .o : Object file
+  * .sh : Sjell program
+  * .tar : Archived using TAR
+  * .uu : UUencoded File
+  * .Z : compress file
+* Directories
+  * Adds a level of organization
+  * Tree based
+  * Starts at / (root)
+* Special Directories
+  * / : root
+  * /dev : I/O devices - disks
+  * /etc : sys admin stuff
+  * /opt : applications
+  * /home : user directories
+  * /tmp : temporary files
+  * /var : system variables
+  * /bin : commands
+  * /usr : commands, libraries

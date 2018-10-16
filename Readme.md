@@ -14,3 +14,4 @@
 5. Interview
 6. MSA
 7. 정보처리기사 실기
+8. UNIX
