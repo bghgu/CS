@@ -50,7 +50,7 @@
 
 ## D
 
-* Dark Data(다트 데이터)
+* Dark Data(다크 데이터)
 
 * Dark Web(다크 웹)
 
@@ -70,7 +70,7 @@
 
 * DRM(Digital Rights Management, 디지털 저작권 관리)
 
-* DRP(Disaster Recovery Plan, 재난 복구 계획
+* DRP(Disaster Recovery Plan, 재난 복구 계획)
 
 ## E
 
